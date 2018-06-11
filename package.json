@@ -12,7 +12,8 @@
     "pretest": "npm run build",
     "test": "jest",
     "prepublish": "npm test",
-    "clean": "rm dist/* && rm example/bundle*"
+    "clean": "rm dist/* && rm example/bundle*",
+    "postinstall": "cd lib || npm run build"
   },
   "github-pages-deploy": {
     "src": "example"
